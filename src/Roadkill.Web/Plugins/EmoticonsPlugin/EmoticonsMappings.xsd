@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="EmoticonsMappings"
+            xmlns:xs='http://www.w3.org/2001/XMLSchema'
+  >
+  <xs:element name="EmoticonsMappings">
+      <xs:complexType>
+        <xs:choice maxOccurs="unbounded" minOccurs="0">
+          <xs:element name="Mapping">
+            <xs:complexType>
+              <xs:sequence>
+                <xs:element type="xs:string" name="Image"/>
+                <xs:element type="xs:string" name="Notation"/>
+              </xs:sequence>
+            </xs:complexType>
+          </xs:element>
+        </xs:choice>
+      </xs:complexType>
+    </xs:element>
+</xs:schema>

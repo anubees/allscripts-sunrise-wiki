@@ -1,0 +1,62 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Noticia+Text);
+
+/* Make the page have 100% height */
+html, body { height: 100%; min-height: 100%; padding: 0px; margin: 0px;}
+body, h1, h2, h3, h4, h5, h6 { font-family: "Noticia Text", sans-serif;}
+h1, h2, h3, h4, h5, h6 { font-family: "Noticia Text", sans-serif;padding: 5px 0px 5px 0px; }
+
+/* The basic 3 row layout*/
+#header-wrapper { min-height: 7%; padding: 0px; margin: 0px; }
+#content-wrapper { min-height: 83%; padding: 0px; margin: 0px; }
+#footer-wrapper { min-height: 10%; padding: 0px; margin: 0px; }
+
+
+/* Page and pen toolbar */
+#toolbar { position:absolute; top:85px;left:5px;z-index:99; }
+
+/* Responsive header */
+@media screen and (min-width:720px) {
+	/* Show the bar at the top for larger screens*/
+	#bootstrap-nav-menu { float: left; }
+	#search { float:left; margin-top: 10px; padding-left: 150px; }
+}
+@media screen and (max-width:720px) {
+	#search-mobile { margin: 15px;padding-left:10px; }
+	#toolbar { display:none; }
+}
+#header-wrapper { background-color: #7AB800; border-bottom: 1px solid #DDD; background: url(../../Assets/Images/MT-TopNav.png) repeat-x left top } /* redefine the bootstrap nav bar*/
+#header-wrapper .navbar { background-color: #FFE29C; border: 0px; margin-bottom: 0px !important; min-height: 100%; background: url(../../Assets/Images/t2.jpg) repeat-x left top }
+#header-wrapper a:link { color:#FFFFFF !important;}
+#header-wrapper a:active { color:#FFFFFF !important;}
+#header-wrapper a:hover { color:#FFFFFF !important;}
+#header-wrapper a:focus { color:#FFFFFF !important;}
+#header-wrapper a:visited { color:#FFFFFF !important;}
+
+/* Login bar*/
+#login-status	{ text-align:right;padding:2px;}
+#loggedinas	{ display:block;}
+
+
+/* The main page container*/
+#container { padding: 20px !important; font-size: 1em; background-color: #F8F8F8; }
+
+/* Change the default footer */
+#footer-wrapper { background-color: #7AB800; background: url(../../Assets/Images/MT-TopNav.png) repeat-x left top}
+#footer-inner { padding: 0px 20px; border-top: 1px solid #C09D11; min-height: 100%; }
+#viewhistory { display: inline; }
+#viewhistory a:link { color:#FFFFFF !important;}
+#viewhistory a:active { color:#FFFFFF !important;}
+#viewhistory a:hover { color:#FFFFFF !important;}
+#viewhistory a:focus { color:#FFFFFF !important;}
+#viewhistory a:visited { color:#FFFFFF !important;}
+
+#top-link a:link { color:#FFFFFF !important;}
+#top-link a:active { color:#FFFFFF !important;}
+#top-link a:hover { color:#FFFFFF !important;}
+#top-link a:focus { color:#FFFFFF !important;}
+#top-link a:visited { color:#FFFFFF !important;}
+
+/* Settings page */
+#configuration-container legend { font-size:1.2em !important; }
+#configuration-container select { font-size:0.9em !important;font-weight:normal;}
+#configuration-container input { font-size:0.9em !important;font-weight:normal;}
