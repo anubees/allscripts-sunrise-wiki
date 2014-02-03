@@ -323,6 +323,8 @@
     <Content Include="Assets\CSS\images\blank.gif" />
     <Content Include="Assets\CSS\images\plugin-disabled.png" />
     <Content Include="Assets\CSS\images\plugin-enabled.png" />
+    <Content Include="Assets\Images\AllscriptsLogoJRO-03.png" />
+    <Content Include="Assets\Images\AllscriptsSparkWikiLogo.png" />
     <Content Include="Assets\Images\emoticons\add.png" />
     <Content Include="Assets\Images\emoticons\biggrin.png" />
     <Content Include="Assets\Images\emoticons\check.png" />
@@ -343,6 +345,9 @@
     <Content Include="Assets\Images\emoticons\tongue.png" />
     <Content Include="Assets\Images\emoticons\warning.png" />
     <Content Include="Assets\Images\emoticons\wink.png" />
+    <Content Include="Assets\Images\favicon.gif" />
+    <Content Include="Assets\Images\favicon.ico" />
+    <Content Include="Assets\Images\favicon_spark.ico" />
     <Content Include="Assets\Images\filemanager\cancel.png" />
     <Content Include="Assets\Images\filemanager\directory.png" />
     <Content Include="Assets\Images\filemanager\file.png" />
@@ -384,7 +389,12 @@
     <Content Include="Assets\Bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Assets\Bootstrap\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Assets\CSS\tagmanager.css" />
+    <Content Include="Assets\Images\MT-TopNav.png" />
+    <Content Include="Assets\Images\MT-TopNav2.png" />
+    <Content Include="Assets\Images\oon.gif" />
     <Content Include="Assets\Images\roadkill.png" />
+    <Content Include="Assets\Images\t2.jpg" />
+    <Content Include="Assets\Images\tp.jpg" />
     <Content Include="Assets\opensearch.xml">
       <SubType>Designer</SubType>
     </Content>
