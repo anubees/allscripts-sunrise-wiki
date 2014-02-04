@@ -1303,7 +1303,7 @@ namespace Roadkill.Core.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Powered by Roadkill Wiki.
+        ///   Looks up a localized string similar to I spawned on Jan 22, 2014. I am powered by Roadkill Wiki.
         /// </summary>
         public static string Shared_PoweredBy {
             get {
