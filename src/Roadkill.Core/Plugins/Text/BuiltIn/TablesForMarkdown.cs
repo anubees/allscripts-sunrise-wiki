@@ -98,7 +98,7 @@ namespace Roadkill.Core.Plugins.Text.BuiltIn
 				string line = l.Trim('\r');
 				string lineTrimmed = line.TrimStart(' ');
 
-                if (!lineTrimmed.StartsWith("|") && !InTable)
+                if (!(lineTrimmed.StartsWith("|") || lineTrimmed.StartsWith("<p>|")) && !InTable)
                 {
                     htmlMarkup.Append(lineTrimmed);
                     continue;
@@ -115,7 +115,7 @@ namespace Roadkill.Core.Plugins.Text.BuiltIn
 						InTable = false;
 					}                        					
 					// --- start of table with header row
-					else if (!InTable && lineTrimmed.StartsWith("|="))
+                    else if (!InTable && (lineTrimmed.StartsWith("|=") || lineTrimmed.StartsWith("<p>|=")))
 					{
 						// close any pending lists
 						_closeLists(ref htmlMarkup, ref iBullet, ref iNumber, lineTrimmed);
