@@ -399,6 +399,7 @@
     <Compile Include="Extensions\UrlHelperExtensions.cs" />
     <Compile Include="Mvc\Attributes\IAuthorizationAttribute.cs" />
     <Compile Include="Mvc\Controllers\ConfigurationTesterController.cs" />
+    <Compile Include="Plugins\Text\BuiltIn\TablesForMarkdown.cs" />
     <Compile Include="Plugins\Text\BuiltIn\EmoticonsPlugin.cs" />
     <Compile Include="Security\AuthorizationProvider.cs" />
     <Compile Include="Security\IAuthorizationProvider.cs" />
