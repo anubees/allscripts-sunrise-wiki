@@ -279,7 +279,7 @@ namespace Roadkill.Core.Plugins.Text.BuiltIn
                     string cell = _processCreoleFragment(line.Substring(iPos, iEnd - iPos)).Trim();
                     if (cell.Length == 0)
                         cell = "&nbsp;"; // table won't render if there isn't at least something...
-                    markup += String.Format("{0}{1}</td>", _getStartTag("<td>"), cell);
+                    markup += String.Format("{0}{1}</td>", _getStartTag("<td align='center'>"), cell);
                     iPos = iEnd;
                 }
                 else

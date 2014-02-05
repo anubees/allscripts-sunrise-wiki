@@ -66,22 +66,22 @@
   </Mapping>
   <Mapping>
     <Image>~/Assets/Images/emoticons/star_yellow.png</Image>
-    <Notation>{(*)}</Notation>
+    <Notation>{(@)}</Notation>
   </Mapping>
   <Mapping>
     <Image>~/Assets/Images/emoticons/star_red.png</Image>
-    <Notation>{(*r)}</Notation>
+    <Notation>{(@r)}</Notation>
   </Mapping>
   <Mapping>
     <Image>~/Assets/Images/emoticons/star_green.png</Image>
-    <Notation>{(*g)}</Notation>
+    <Notation>{(@g)}</Notation>
   </Mapping>
   <Mapping>
     <Image>~/Assets/Images/emoticons/star_blue.png</Image>
-    <Notation>{(*b)}</Notation>
+    <Notation>{(@b)}</Notation>
   </Mapping>
   <Mapping>
     <Image>~/Assets/Images/emoticons/star_yellow.png</Image>
-    <Notation>{(*y)}</Notation>
+    <Notation>{(@y)}</Notation>
   </Mapping>
 </EmoticonsMappings>
