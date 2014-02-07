@@ -82,7 +82,7 @@ namespace Roadkill.Core.Plugins.Text.BuiltIn
             //(?<!\[) skips Notations that start with '[' 
             //(?!\]) skips Notations that end with ']'
             //E.g: [{:)}]
-            const string regexCorrect = @"(?<!\[)\{(\:[()DP]|\;\)|(\(([ynix!+\-?*\/]|on|off|@|@[rgby])\)))\}(?!\])";
+            const string regexCorrect = @"(?<!\[)\{(\:[()DP]|\;\)|(\(([ynix!+\-?*\/]|on|off|h|c|@|@[rgby])\)))\}(?!\])";
             Regex myRegexCorrect = new Regex(regexCorrect, myRegexOptions);
             const string imageLocation = @"<img src='{0}' />";
             int advanceIndex = 0;
@@ -110,7 +110,7 @@ namespace Roadkill.Core.Plugins.Text.BuiltIn
             const RegexOptions myRegexOptions = RegexOptions.IgnoreCase | RegexOptions.Multiline;
             //Regex for ignored/skipped Notation - This notation will be replaced by a notation without the '[' and ']'
             //E.g: [{:)}]
-            const string regexEscape = @"\[\{(\:[()DP]|\;\)|(\(([ynix!+\-?*\/]|on|off|@|@[rgby])\)))\}\]";
+            const string regexEscape = @"\[\{(\:[()DP]|\;\)|(\(([ynix!+\-?*\/]|on|off|h|c|@|@[rgby])\)))\}\]";
             Regex myRegexEscape = new Regex(regexEscape, myRegexOptions);
 
             int backTrackIndex = 0;

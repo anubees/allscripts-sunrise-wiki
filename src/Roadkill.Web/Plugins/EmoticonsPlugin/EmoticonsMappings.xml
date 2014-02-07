@@ -84,4 +84,12 @@
     <Image>~/Assets/Images/emoticons/star_yellow.png</Image>
     <Notation>{(@y)}</Notation>
   </Mapping>
+  <Mapping>
+    <Image>~/Assets/Images/emoticons/hourglass.png</Image>
+    <Notation>{(h)}</Notation>
+  </Mapping>
+  <Mapping>
+    <Image>~/Assets/Images/emoticons/clock1.png</Image>
+    <Notation>{(c)}</Notation>
+  </Mapping>  
 </EmoticonsMappings>

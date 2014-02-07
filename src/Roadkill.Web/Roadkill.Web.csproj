@@ -23,9 +23,9 @@
     <OldToolsVersion>4.0</OldToolsVersion>
     <UseIISExpress>true</UseIISExpress>
     <IISExpressSSLPort />
-    <IISExpressAnonymousAuthentication />
-    <IISExpressWindowsAuthentication />
-    <IISExpressUseClassicPipelineMode />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
     <WebGreaseLibPath>..\..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
     <TypeScriptTarget>ES5</TypeScriptTarget>
     <TypeScriptIncludeComments>true</TypeScriptIncludeComments>
@@ -620,8 +620,6 @@
       <SubType>Designer</SubType>
     </Content>
     <None Include="Properties\PublishProfiles\Download.pubxml" />
-    <Content Include="Views\Upgrade\Index.cshtml" />
-    <Content Include="Views\Upgrade\Layout.cshtml" />
     <Content Include="Areas\SiteSettings\Views\Cache\Index.cshtml" />
     <Content Include="Views\User\LoggedInAs.cshtml" />
     <Content Include="Views\User\LeftMenu.cshtml" />
@@ -650,6 +648,8 @@
     <Content Include="Views\User\Recaptcha.cshtml" />
     <Content Include="Roadkill.config" />
     <Content Include="Themes\Allscripts\Theme.cshtml" />
+    <Content Include="Views\Upgrade\Index.cshtml" />
+    <Content Include="Views\Upgrade\Layout.cshtml" />
     <None Include="Web.Mono.config">
       <DependentUpon>Web.config</DependentUpon>
       <SubType>Designer</SubType>
@@ -723,6 +723,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\Internal\Search\" />
+    <Folder Include="Views\Shared\Upgrade\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
