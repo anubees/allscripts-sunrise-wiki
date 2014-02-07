@@ -328,9 +328,11 @@
     <Content Include="Assets\Images\emoticons\add.png" />
     <Content Include="Assets\Images\emoticons\biggrin.png" />
     <Content Include="Assets\Images\emoticons\check.png" />
+    <Content Include="Assets\Images\emoticons\clock1.png" />
     <Content Include="Assets\Images\emoticons\error.png" />
     <Content Include="Assets\Images\emoticons\forbidden.png" />
     <Content Include="Assets\Images\emoticons\help_16.png" />
+    <Content Include="Assets\Images\emoticons\hourglass.png" />
     <Content Include="Assets\Images\emoticons\information.png" />
     <Content Include="Assets\Images\emoticons\lightbulb.png" />
     <Content Include="Assets\Images\emoticons\lightbulb_on.png" />
