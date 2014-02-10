@@ -38,8 +38,8 @@
                 function convertUTCDateToLocalDate(date) {
                     var newDate = new Date(date.getTime());
                     var offset = date.getTimezoneOffset() / 60;
-                    var hours = date.getHours();
-                    newDate.setHours(hours - offset);
+                    var minutes = date.getMinutes();
+                    newDate.setMinutes(minutes - offset);
                     return newDate;
                 }
 
