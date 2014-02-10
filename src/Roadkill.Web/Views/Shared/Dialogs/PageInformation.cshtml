@@ -20,7 +20,7 @@
 				<div class="row">
 					<div class="col-sm-6">
 						<b>@SiteStrings.Page_Info_CreatedOn</b><br />
-						@Model.CreatedOn<br /><br />
+						<span id="dateCreatedOn">@Model.CreatedOn</span><br /><br />
 
 						<b>@SiteStrings.Page_Info_CreatedBy</b><br />
 						@Model.CreatedBy
@@ -28,13 +28,30 @@
 
 					<div class="col-sm-6">
 						<b>@SiteStrings.Page_Info_ModifiedOn</b><br />
-						@Model.ModifiedOn<br /><br />
-
-						<b>@SiteStrings.Page_Info_ModifiedBy</b><br />
-						@Model.ModifiedBy
-					</div>
+                        <span id="dateModifiedOn">@Model.ModifiedOn</span><br /><br />
+                        <b>@SiteStrings.Page_Info_ModifiedBy</b><br />
+                        @Model.ModifiedBy
+                    </div>
 				</div>
 			</div>
+            <script lang="javascript">
+                function convertUTCDateToLocalDate(date) {
+                    var newDate = new Date(date.getTime());
+                    var offset = date.getTimezoneOffset() / 60;
+                    var hours = date.getHours();
+                    newDate.setHours(hours - offset);
+                    return newDate;
+                }
+
+                function changeDateTimeZone(id)
+                {
+                    var date = convertUTCDateToLocalDate(new Date(document.getElementById(id).innerHTML));
+                    document.getElementById(id).innerHTML = date.toLocaleString();
+                }
+
+                changeDateTimeZone("dateCreatedOn");
+                changeDateTimeZone("dateModifiedOn");
+            </script>
 
 			<div class="modal-footer">
 				<button type="button" data-dismiss="modal" class="btn btn-primary">@SiteStrings.Button_Close</button>
