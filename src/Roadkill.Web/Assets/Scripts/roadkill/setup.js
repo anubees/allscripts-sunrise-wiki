@@ -39,6 +39,22 @@ var Roadkill;
                         item.fadeOut();
                     }, 5000);
                 });
+
+                // Any alert warnings and success that should dissapear after 10 seconds
+                $(".alert-long-temporary").each(function () {
+                    var item = $(this);
+                    setTimeout(function () {
+                        item.fadeOut();
+                    }, 10000);
+                });
+
+                // Any alert warnings and success that should dissapear after 15 seconds
+                $(".alert-long-long-temporary").each(function () {
+                    var item = $(this);
+                    setTimeout(function () {
+                        item.fadeOut();
+                    }, 15000);
+                });
             };
 
             Setup.bindTimeAgo = function () {
