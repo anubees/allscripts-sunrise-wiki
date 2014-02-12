@@ -59,7 +59,7 @@ namespace Roadkill.Core.Plugins.Text.BuiltIn
 		public override string BeforeParse(string markupText)
 		{
 			if (CompiledRegex.IsMatch(markupText))
-			{
+			{               
 				// Replaces the [[[code lang=sql|xxx]]]
 				// with the HTML tags (surrounded with {{{roadkillinternal}}.
 				// As the code is HTML encoded, it doesn't get butchered by the HTML cleaner.
@@ -71,6 +71,7 @@ namespace Roadkill.Core.Plugins.Text.BuiltIn
 					markupText = markupText.Replace(match.Groups["code"].Value, code);
 
 					markupText = Regex.Replace(markupText, RegexString, ReplacementPattern, CompiledRegex.Options);
+                    markupText = markupText.Replace("\n", "%%%%");
 				}
 			}
 
@@ -84,8 +85,8 @@ namespace Roadkill.Core.Plugins.Text.BuiltIn
 			// Undo the HTML sanitizer's attribute cleaning on the pre's.
 			html = html.Replace("<pre class=\"brush&#x3A;&#x20;c&#x23;", "<pre class=\"brush: c#");
 			html = html.Replace("<pre class=\"brush&#x3A;&#x20;", "<pre class=\"brush: ");
-
-			return html;
+            html = html.Replace("%%%%", "\n");
+            return html;
 		}
 
 		public override string GetHeadContent()
