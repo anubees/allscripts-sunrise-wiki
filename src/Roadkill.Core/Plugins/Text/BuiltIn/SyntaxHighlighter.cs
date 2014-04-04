@@ -68,10 +68,9 @@ namespace Roadkill.Core.Plugins.Text.BuiltIn
 				{
 					string language = match.Groups["lang"].Value;
 					string code = HttpUtility.HtmlEncode(match.Groups["code"].Value);
+                    code = code.Replace("\n", "%%%%");
 					markupText = markupText.Replace(match.Groups["code"].Value, code);
-
 					markupText = Regex.Replace(markupText, RegexString, ReplacementPattern, CompiledRegex.Options);
-                    markupText = markupText.Replace("\n", "%%%%");
 				}
 			}
 
